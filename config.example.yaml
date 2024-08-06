@@ -1,0 +1,50 @@
+start_time: '2024-07-29T00:00:00Z'
+end_time: '2024-08-04T00:00:00Z'
+profit_share: 0.90
+min_collateralization_ratio: 1.001
+sgyd_max_apr: 0.20
+pools_max_apr: 0.04
+venues:
+  ethereum:
+    pools:
+      - address: '0xc2aa60465bffa1a88f5ba471a59ca0435c3ec5c1'
+        name: 'USDC/GYD'
+      - address: '0x1cce5169bde03f3d5ad0206f6bd057953539dae6'
+        name: 'sDAI/GYD'
+        # Mock gauge for testing
+        gauge: '0x9e3bF27feCeaA58DF415a3Caa90347a06aA81be2'
+      - address: '0xfbfad5fa9e99081da6461f36f229b5cc88a64c63'
+        name: 'USDT/GYD'
+      - address: '0x7f2b3b7fbd3226c5be438cde49a519f442ca2eda'
+        name: 'aUSDT/GYD'
+    # sDAI for testing:
+    # sgyd:
+    #   - address: '0x83F20F44975D03b1b09e64809B757c47f942BEeA'
+    #     deployment_block: 16428133
+    # TESTING sGYD. (holds fake GYD but works for testing)
+    # sgyd:
+    #   - address: '0xe9E31E6a598F0476D5eb16A005C50645924ee67E'
+    #     deployment_block: 20277306
+    sgyd:
+      - address: '0xeA50f402653c41cAdbaFD1f788341dB7B7F37816'
+        deployment_block: 20422208
+  polygon-zkevm:
+    pools:
+      - address: '0xf596ac9c9b60f9c555b8290c2b039c275396afb4'
+        name: 'USDT/GYD'
+      - address: '0xd4ec150896f1784b5be2b3af460d2cb2b8c0f522'
+        name: 'USDC/GYD'
+  arbitrum:
+    pools:
+      - address: '0x7272163A931DAC5BBE1CB5FEFAF959BB65F7346F'
+        name: 'aUSDT/GYD'
+      - address: '0x6e822c64c00393b2078f2a5bb75c575ab505b55c'
+        name: 'aUSDC/GYD'
+    # TESTING sGYD. (holds fake GYD but works for testing)
+    # sgyd:
+    #   - address: '0xe9E31E6a598F0476D5eb16A005C50645924ee67E'
+    #     deployment_block: 230803312
+    sgyd:
+      - address: '0xeA50f402653c41cAdbaFD1f788341dB7B7F37816'
+        deployment_block: 238387981
+

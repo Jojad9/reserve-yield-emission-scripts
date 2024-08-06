@@ -1,0 +1,29 @@
+start_time: '2024-07-29T00:00:00Z'
+end_time: '2024-08-04T00:00:00Z'
+profit_share: 0.90
+min_collateralization_ratio: 1.001
+sgyd_max_apr: 0.20
+pools_max_apr: 0.04
+venues:
+  ethereum:
+    pools:
+      - address: '0xC2AA60465BfFa1A88f5bA471a59cA0435c3ec5c1'
+        name: 'USDC/GYD'
+      - address: '0x1CCE5169bDe03f3d5aD0206f6BD057953539DAE6'
+        name: 'sDAI/GYD'
+      - address: '0xfbfaD5fa9E99081da6461F36f229B5cC88A64c63'
+        name: 'USDT/GYD'
+    sgyd:
+      - address: '0xeA50f402653c41cAdbaFD1f788341dB7B7F37816'
+        deployment_block: 20422208
+  arbitrum:
+    # Only for testing. TODO remove after.
+    pools:
+      - address: '0x7272163A931DaC5BBe1CB5feFaF959BB65F7346F'
+        name: 'aUSDT/GYD'
+      - address: '0x6e822c64c00393b2078f2a5BB75c575aB505B55c'
+        name: 'aUSDC/GYD'
+    sgyd:
+      - address: '0xeA50f402653c41cAdbaFD1f788341dB7B7F37816'
+        deployment_block: 238387981
+

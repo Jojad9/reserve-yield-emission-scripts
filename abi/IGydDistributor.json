@@ -1,0 +1,37 @@
+[
+  {
+    "type": "function",
+    "name": "distributeGYD",
+    "inputs": [
+      {
+        "name": "distribution",
+        "type": "tuple",
+        "internalType": "struct IGydDistributor.Distribution",
+        "components": [
+          {
+            "name": "destinationType",
+            "type": "uint8",
+            "internalType": "enum IGydDistributor.DestinationType"
+          },
+          {
+            "name": "recipient",
+            "type": "address",
+            "internalType": "address"
+          },
+          {
+            "name": "amount",
+            "type": "uint256",
+            "internalType": "uint256"
+          },
+          {
+            "name": "data",
+            "type": "bytes",
+            "internalType": "bytes"
+          }
+        ]
+      }
+    ],
+    "outputs": [],
+    "stateMutability": "payable"
+  }
+]
